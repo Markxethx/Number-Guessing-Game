@@ -20,10 +20,10 @@
             </section>
         </div>
         <div id="gameArea">
-            <button id="newGameButton">New Game</button>
+            <button id="newGameButton" onclick="newGame()">New Game</button>
             <section>
                 <h3 id="textOutput">Your Guess</h3>
-                <input type="number" id="inputBox" min="1" max="100"/>
+                <input type="number" id="inputBox" min="1" max="100" onchange="compareGuess()"/>
             </section>
             <section>
                 <p>Current Range:</p>
@@ -46,6 +46,6 @@
             </section>
         </div>
     </main>
-    <script src="index.js"></script>
+    <script src="index.min.js"></script>
 </body>
 </html>

@@ -78,7 +78,7 @@ input {
 }
 
 #rangeOutput {
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 .stats {
@@ -97,6 +97,20 @@ input {
 
 #newGameButton {
     border-radius: 0;
+}
+.flash {
+    animation: flash 1s infinite;
+}
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @media(min-width: 800px) {
